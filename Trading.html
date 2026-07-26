@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Trading</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d0b21;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: rgba(13, 11, 33, 0.9);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .nav-buttons button {
+            background: transparent;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .nav-buttons .btn-primary {
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #161233;
+            border: 1px solid #3b3363;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 30px;
+        }
+
+        .badge span {
+            color: #10b981;
+            margin-right: 6px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        h1 .brand {
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: #9ca3af;
+            max-width: 600px;
+            margin: 20px auto 40px auto;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Action Buttons */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .btn-main {
+            background: linear-gradient(135deg, #a855f7, #3b82f6);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 1px solid #6b7280;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .stat-card {
+            border-top: 1px solid #2d284d;
+            padding: 20px 0;
+        }
+
+        .stat-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: #6b7280;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">📈 Skyline Trading</div>
+        <div class="nav-buttons">
+            <button>Sign In</button>
+            <button class="btn-primary">Get Started</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="badge"><span>●</span> One-tick digit markets · live</div>
+        
+        <h1>mash<br><span class="brand">Skyline Trading</span></h1>
+        
+        <p class="subtitle">
+            One tick. Four calls — direction, even/odd, match the digit, or clear the barrier. Dig on a free demo; fund the real account with M-Pesa.
+        </p>
+
+        <div class="cta-buttons">
+            <button class="btn-main">Open Free Account &rarr;</button>
+            <button class="btn-outline">Already on Skyline?</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>V75</h3>
+                <p>Live Index</p>
+            </div>
+            <div class="stat-card">
+                <h3>Digit</h3>
+                <p>Last-Tick Calls</p>
+            </div>
+            <div class="stat-card">
+                <h3>95%</h3>
+                <p>Buy / Sell Dig</p>
+            </div>
+            <div class="stat-card">
+                <h3>Zero</h3>
+                <p>Risk on Demo</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
